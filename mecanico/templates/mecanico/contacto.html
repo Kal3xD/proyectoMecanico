@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d9baa6bf62.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Contacto</title>
+</head>
+<body>
+    
+        <div id="banner">
+        <div class="header__superior">
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div class="carro">
+                <input type="search" placeholder="Tu carro                            🛒 ">
+            </div>
+            <div class="search">
+                <input type="search" placeholder="¿Que deseas buscar?">
+            </div>
+        </div>
+        <div class="container__menu">
+
+            <div class="menu">
+                <input type="checkbox" id="check__menu">
+            <label id="#label__check" for="check__menu">
+                <i class="fa-solid fa-bars icon__menu"></i>
+            </label>
+                <nav>
+                    <ul>
+                        <li><a href="index.html" ></a></li>
+                        <li><button id="btn-abrir-modal">Login</button></li>
+                        <li><a href="nuevas_atenciones.html">Atenciones</a></li>
+                        <li><a href="creacion.html">Creacion de cuenta</a></li>
+                        <li><a href="contacto.html" id="selected">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        </div>
+    
+    <br>
+    <br>
+
+    <dialog id="modal">
+            
+        <body class="cuerpo-login"></body>
+        <div class="login-box">
+            <img src="img/logo.png" alt="Logo" height="180px">
+            <h1>Login Aqui</h1>
+
+        <form action="">
+            <!--Usuaurio-->
+            <label for="username">Usuario</label>
+            <input type="text" id="Usuario" placeholder="Ingrese Correo">
+    
+            <!--Password-->
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Ingrese Password">
+    
+            <!--boton login-->
+            <input type="submit" onclick="return enviarFormulario();" value="Log In">
+    
+            <!--referencias a creacion de cuenta y perdida de clave-->
+    
+            <button id="btn-cerrar-modal">X</button>
+            <a href="#">¿Perdiste tu clave?</a><br>
+            <a href="creacion.html">¿No tienes usuario?</a>
+        </form>
+        <div id="error"></div>
+        </div>
+
+    </dialog>
+
+<form>
+    <div class="row g-3">
+    <div class="col-md-1"></div>
+    <div class="col-12">
+        <div class="container_titulo">    
+        Formulario de contactos
+        </div></div>
+    <br>
+    <div class="col-md-4">
+        <label for="caja_nombre" class="form-label">Nombre:</label>
+        <input type="text" class="form-control" id="caja_nombre" placeholder="Ingrese su nombre" required> 
+    </div>
+    <div class="col-md-4">
+        <label for="caja_apellido" class="form-label">Apellido:</label>
+        <input type="text" class="form-control" id="caja_apellido"placeholder="Ingrese su nombre" required>
+    </div>
+    <br>
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+    <label for="Fecha">Fecha:</label>
+
+    <input type="date" id="Fecha" name="trip-start"
+        value="2023-01-22"
+        min="2022-01-01" max="2100-12-31">
+    <br></div>
+    
+    <div class="col-md-4" >
+        <label for="caja_correo" class="form-label">Correo electronico:</label>
+        <input type="email" class="form-control" id="caja_correo" aria-describedby="emailHelp" placeholder="Ingrese email" style="display: inline-flex;" required>
+        
+    </div>
+    <br>
+    
+    <div class="form-group">
+        <div class="col-12" style="text-align: center;">
+        <label for="comentario_usuario">Comentarios o dudas:</label></div>
+        <textarea class="form-control" id="comentario_usuario" placeholder="Ingrese su duda o comentario" rows="3" style="align-items: center ; " required></textarea>
+    </div> 
+    <div class="container_titulo">
+        <input type="submit" class="btn btn-primary" onclick="return enviarformulariocontacto()" value='Envíar comentario' style="align-items: center;" >
+        </div>
+    </div>
+
+</form>   
+
+
+<script src="funciones.js"></script>
+<script src="validacion.js"></script>  
+</body>
+</html>
