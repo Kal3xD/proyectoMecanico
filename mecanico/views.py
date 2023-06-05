@@ -10,3 +10,5 @@ def prueba(request):
     context={}
     return render(request, 'mecanico/prueba.html', context)
 
+
+
