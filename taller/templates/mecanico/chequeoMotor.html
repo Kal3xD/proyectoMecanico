@@ -16,7 +16,7 @@
     <div id="banner">
     <div class="header__superior">
         <div class="logo">
-            <img src="img/logo.png" alt="">
+            <img src="../../static/img/logo.png" alt="">
         </div>
         <div class="carro">
             <input type="search" placeholder="Tu carro                            🛒 ">
@@ -34,7 +34,7 @@
         </label>
             <nav>
                 <ul>
-                    <li><a href="index.html" id="selected"></a></li>
+                    <li><a href="{% url 'index'%}" id="selected"></a></li>
                     <li><button id="btn-abrir-modal">Login</button></li>
                     <li><a href="nuevas_atenciones.html">Atenciones</a></li>
                     <li><a href="contacto.html">Contactos</a></li>
@@ -48,7 +48,7 @@
             
         <body class="cuerpo-login"></body>
         <div class="login-box">
-            <img src="img/logo.png" alt="Logo" height="180px">
+            <img src="../../static/img/logo.png" alt="Logo" height="180px">
             <h1>Login Aqui</h1>
 
         <form action="">

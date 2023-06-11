@@ -16,18 +16,14 @@
     
         <div id="banner">
         <div class="header__superior">
-            <div class="logo">
-                <img src="../../static/img/logo.png" alt="">
+            <div id="logo">
+                <img src="../../static/img/logo.png" width= 120px alt="logo">
             </div>
-            <div class="carro">
-                <input type="search" placeholder="Tu carro                            🛒 ">
-            </div>
-            <div class="search">
-                <input type="search" placeholder="¿Que deseas buscar?">
-            </div>
+            
+            
         </div>
         <div class="container__menu">
-
+            
             <div class="menu">
                 <input type="checkbox" id="check__menu">
             <label id="#label__check" for="check__menu">
@@ -39,6 +35,12 @@
                         <li><button id="btn-abrir-modal">Login</button></li>
                         <li><a href="{% url 'nuevas_atenciones'%}">Atenciones</a></li>
                         <li><a href="{% url 'contacto'%}">Contactos</a></li>
+                        <div id="carro">
+                            <input type="search"  placeholder="Tu carro                            🛒 ">
+                        </div>
+                        <div class="search">
+                            <input type="search" placeholder="¿Que deseas buscar?">
+                        </div>
                     </ul>
                 </nav>
             </div>
@@ -75,11 +77,11 @@
             </div>
 
     </dialog>
-    
-   <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+<div id="contenedor">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
         <ol class="carousel-indicators" id="indicators"></ol>
-        <div class="carousel-inner" id="carousel-inner"></div>
-        <a class="carousel-control-prev" href="#carouselExampleIndicators"  role="button" data-bs-slide="prev">
+        <div class="carousel-inner" id="carousel-inner" width=70%></div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators"   role="button" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </a>
@@ -88,14 +90,14 @@
             <span class="visually-hidden">Next</span>
         </a>
     </div>
-            </div>
+</div>        
 
             
             <a href="{% url 'chequeoMotor'%}" class="boton-engranaje">Motor<i class="fas fa-cog"></i></a>
             <a href="{% url 'sistemaElectronico'%}" class="boton-engranaje">Electronica<i class="fas fa-cog"></i></a>
             <a href="{% url 'jsDireccionales'%}" class="boton-engranaje">Direccionales<i class="fas fa-cog"></i></a>
 
-<script src="{% static 'js/api.js'%}"></script>
-<script src="{%static 'js/funciones.js'%}"></script>
+<script src="/static/js/api.js"></script>
+<script src="/static/js/funciones.js"></script>
 </body>
 </html>
