@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: flex;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-decoration: none;
+}
+header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+}
+/*header superior*/
+
+.header__superior{
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.logo img{
+    width: 250px;
+}
+
+
+.search input{
+    width: 300px;
+    padding: 10px;
+}
+
+/* Botones de trabajo*/
+.boton-engranaje {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 80px;
+    height: 80px;
+    background-color: #2a2e30;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    font-size: 12px;
+    text-align: center;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+    margin: 20px auto;
+    margin-right: 100%;
+}
+
+.boton-engranaje:hover {
+    transform: rotate(45deg);
+}
+/*BARRRA MENU*/
+#banner{
+    background: url(../img/Banner2.jpg) no-repeat;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+
+}
+.container__menu{
+    width: 100%;
+    height: 70px;
+    background: #020202;
+    padding: 0px 20px;
+}
+
+.menu{
+    max-width: 1200px;
+    margin: auto;
+    height: 100%;
+}
+
+nav{
+    height: 100%;
+}
+
+nav > ul{
+    height: 100%;
+    display: flex;
+}
+
+nav > ul > li{
+    height: 100%;
+    list-style: none;
+    position: relative;
+}
+nav > ul > li:first-child > a{
+    background-image: url(../img/Home.png);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    padding: 20px 40px;
+}
+nav > ul > li:first-child:hover > a{
+    background-image: url(../img/Home.png);
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+nav > ul > li > a{
+    width: 100%;
+    height: 100%;
+    display: flexbox;
+    align-items: center;
+    padding: 14px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: all 300ms ease;
+}
+
+nav > ul > li > a:hover{
+    transform: scale(1.1);
+    background: #6f06f8;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+
+}
+nav > ul > li > button:hover{
+    transform: scale(1.1);
+    background: #6f06f8;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+#selected{
+    transform: scale(1.1);
+    background-color: #6f06f8;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+}
+/*modal*/
+#btn-abrir-modal{
+    background-size: 24px;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-transform: uppercase;
+    color: #fff;
+    transition: all 300ms ease; transform: scale(1.1);
+    background-color: #000000;
+    tex
+}
+
+#modal::backdrop{
+    background-color: rgba(0,0,0,0.55);
+}
+
+#modal{
+    max-width: 50ch;
+    left: 40%;
+}
+/*carrusel*/
+
+#carouselExampleIndicators{
+    max-width: 600px;
+    padding: 20px 20px;
+    margin-top: 0;
+    left: 30%;
+    padding: 0;
+    position: fixed;
+}
+
+/*Menu de trabajos*/
+#trabajos{
+    left: 90%;
+    color: #000000;
+}
+
+/* Login */
+#fondo-login{
+background: url(../img/fondo-login.jpg) no-repeat;
+position: absolute;
+background-size: cover;
+background-position: center center;
+height: 100%;
+width: 100%;
+}
+
+#cuerpo-login{
+    margin: 0;
+    padding: 0;
+    background: url() no-repeat center top;
+    background-size: cover;
+    font-family: sans-serif;
+    height: 100;
+}
+
+.login-box{
+    width: 320px;
+    height: 420;
+    background: #000000;
+    color: #fff;
+    top: 50%;
+    left: 50%;
+    box-sizing: border-box;
+    padding: 70px 30px;
+}
+
+.login-box .avatar{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50px;
+    left: calc(50% - 50px);
+}
+
+.login-box h1{
+    margin: 0;
+    padding: 0 0 20px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.login-box label{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+    display: block;
+}
+.login-box input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+    border: none;
+    border-bottom: 1px solido #fff;
+    background: transparent;
+    outline: none;
+    height: 40px;
+    color: #fff;
+    font-size: 16px;
+}
+
+.login-box input[type="submit"] {
+    border: none;
+    outline: none;
+    height: 40px;
+    background: #b80f22;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+
+.login-box a{
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 20px;
+    color: darkgrey;
+}
+
+.login-box a:hover {
+    color: #fff;
+}
+
+h2{
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-shadow: 0 0 8px rgb(0, 0, 0);
+}
+
+p{
+    color:rgb(255, 255, 255);
+    font-size: 25px;
+    text-transform: uppercase;
+    text-shadow: 0 0 8px rgb(2, 2, 2);
+}
+    
+
+
+/*Cards*/
+.container-card{
+	width: 100%;
+	display: flex;
+	max-width: 1100px;
+	margin: auto;
+}
+.title-cards{
+	width: 100%;
+	max-width: 1080px;
+	margin: auto;
+	padding: 20px;
+	margin-top: 20px;
+	text-align: center;
+	color: #7a7a7a;
+}
+.card{
+	width: 100%;
+	margin: 20px;
+	border-radius: 6px;
+	overflow: hidden;
+	background:#fff;
+	box-shadow: 0px 1px 10px rgba(0,0,0,0.2);
+	transition: all 400ms ease-out;
+	cursor: default;
+}
+.card:hover{
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.4);
+	transform: translateY(-3%);
+}
+.card img{
+	width: 100%;
+	height: 210px;
+}
+.card .contenido-card{
+	padding: 15px;
+	text-align: center;
+}
+.card .contenido-card h3{
+	margin-bottom: 15px;
+	color: #7a7a7a;
+}
+.card .contenido-card p{
+	line-height: 1.8;
+	color: #6a6a6a;
+	font-size: 14px;
+	margin-bottom: 5px;
+}
+.card .contenido-card a{
+	display: inline-block;
+	padding: 10px;
+	margin-top: 10px;
+	text-decoration: none;
+	color: #2fb4cc;
+	border: 1px solid #2fb4cc;
+	border-radius: 4px;
+	transition: all 400ms ease;
+	margin-bottom: 5px;
+}
+.card .contenido-card a:hover{
+	background: #2fb4cc;
+	color: #fff;
+}
+
+/* Codigo de columnas */
+
+col{
+    text-align: justify;
+    text-decoration-color: #b80f22;
+    background-color: aqua;
+}
+
+.col-1{
+    background-color: #ffffff;
+    
+
+}
+
+.col-4{
+    width: 100%;
+    text-align: center;
+    
+}
+
+.col-6{
+    width: 100%;
+    text-align: center;
+    display: inline;
+}
+
+.col-3{
+    text-align: justify;
+    text-emphasis-color: red; 
+}
+
+.container_titulo{
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.container{
+    text-align: center;
+    display: inline;
+
+}
+
+/*ELEMENTOS RESPONSIVO*/
+
+.icon__menu{
+    font-size: 26px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    width: 26px;
+    height: 100%;
+    display: none;
+    align-items: center;
+}
+
+#label__check{
+    width: 26px;
+    height: 100%;
+    display: none;
+}
+
+#check__menu{
+    display: none;
+}
+
+@media screen and (max-width: 620px){
+
+    .search input {
+        display: none;
+    }
+
+    .header__superior{
+        padding: 10px;
+    }
+
+    .logo img{
+        width: 200px;
+    }
+
+    nav > ul{
+        flex-direction: column;
+        background-color: #080808;
+        position: fixed;
+        left: 0px;
+        top: 200px;
+        width: 100%;
+        height: 0px;
+        transition: all 300ms ease;
+        z-index: 100;
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    nav > ul > li > a:hover{
+        transform: scale(1);
+    }
+
+    nav > ul > li:first-child a{
+        background-position: 20px;
+    }
+
+    #selected{
+        transform: scale(1);
+    }
+
+    #label__check{
+        display: block;
+    }
+
+    .icon__menu{
+        display: flex;
+    }
+
+    #check__menu:checked ~ nav > ul{
+        height: 300px;
+        visibility: visible;
+        opacity: 1;
+    }
+    
+    main{
+        margin-top: 200px;
+    }
+    
+    .container-card{
+		flex-wrap: wrap;
+	}
+	.card{
+		margin: 15px;
+	}
+
+    #carouselExampleIndicators{
+        margin-right: 25%;
+    }
+}
+
+
+
+
+
+
