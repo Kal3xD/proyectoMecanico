@@ -25,3 +25,16 @@ class Genero(models.Model):
 
     def __str__(self):
         return str(self.genero)
+
+
+class Atencion(models.Model):
+    id_atencion         = models.AutoField(primary_key = True)
+    fecha_ate           = models.DateField(blank=False, null=False , auto_now=False, auto_now_add=False)
+    descripcion_ate     = models.CharField(blank=False, null=False, max_length=500)
+    imagen_trabajo      = models.ImageField(upload_to=None , null = False, blank = False)
+    rut                 = models.ForeignKey("Mecanico",  on_delete=models.CASCADE)
+
+
+
+    def __str__(self):
+        return  ("Atención numero") + " " +str(self.id_atencion)
